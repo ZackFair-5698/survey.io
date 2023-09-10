@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Survey Form</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+<body>
+<div class="align">
+<header>
+<h1 class="title" id="title">Zack Fair Survey Form</h1>
+<p class="description" id="description">Thank you for taking the time to help me improve the platform</p>
+    </header>
+<form id="survey-form" method="post">
+<fieldset>
+    <label id="name-label" for="name">Name <input class="NEA" name="name" id="name" type="text" required placeholder="Enter your name"/></label>
+    <label id="email-label" for="email">Email <input class="NEA" name="email" id="email" type="email" required placeholder="Enter your Email"/></label>
+    <label id="number-label" for="number">Age (optional) <input class="NEA" name="number" type="number" 
+        id="number" pattern="[0-9]{8,}" min="13" max="90" required placeholder="Age" /></label>
+    <label id="dropdown-label" for="dropdown">Which option best describes your current role?
+        <select class="dropdown" name="dropdown" id="dropdown">
+            <option value="" disabled selected>Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">other</option>
+        </select>
+    </label>
+    <p>Would you recommend my Github to a friend?</p>
+    <label for="definitely" id="definitely-label"><input class="inline" value="definitely" name="recommend" id="definitely" type="radio" /> Definitely</label>
+    <label for="maybe" id="maybe-label"><input class="inline" value="maybe" name="recommend" id="maybe" type="radio" /> Maybe</label>
+    <label for="not-sure" id="not-sure-label"><input class="inline" value="not-sure" name="recommend" id="not-sure" type="radio" /> Not sure</label>
+    <label id="dropdown2-label" for="dropdown2">What is your favorite feature of my Github?
+        <select class="dropdown" name="dropdown2" id="dropdown2">
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">Repositories</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+        </select>
+    </label>
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <label class="checklist-label" id="Front-end Projects-label" for="Front-end Projects"><input class="checklist" 
+        id="Front-end Projects" type="checkbox" name="Front-end Projects" value="Front-end Projects"> Front-end Projects</label>
+    <label class="checklist-label" id="Back-end Projects-label" for="Back-end Projects"><input class="checklist" 
+        id="Back-end Projects" type="checkbox" name="Back-end Projects" value="Back-end Projects"> Back-end Projects</label>
+    <label class="checklist-label" id="Data Visualization-label" for="Data Visualization"><input class="checklist" 
+        id="Data Visualization" type="checkbox" name="Data Visualization" value="Data Visualization"> Data Visualization</label>
+    <label class="checklist-label" id="Challenges-label" for="Challenges"><input class="checklist" 
+        id="Challenges" type="checkbox" name="Challenges" value="Challenges"> Challenges</label>
+    <label class="checklist-label" id="Open Source Community-label" for="Open Source Community"><input class="checklist" 
+        id="Open Source Community" type="checkbox" name="Open Source Community" value="Open Source Community"> Open Source Community</label>
+    <label class="checklist-label" id="Gitter help rooms-label" for="Gitter help rooms"><input class="checklist" 
+        id="Gitter help rooms" type="checkbox" name="Gitter help rooms" value="Gitter help rooms"> Gitter help rooms</label>
+    <label class="checklist-label" id="Videos-label" for="Videos"><input class="checklist" 
+        id="Videos" type="checkbox" name="Videos" value="Videos"> Videos</label>
+    <label class="checklist-label" id="City Meetups-label" for="City Meetups"><input class="checklist" 
+        id="City Meetups" type="checkbox" name="City Meetups" value="City Meetups"> City Meetups</label>
+    <label class="checklist-label" id="Wiki-label" for="Wiki"><input class="checklist" 
+        id="Wiki" type="checkbox" name="Wiki" value="Wiki"> Wiki</label>
+    <label class="checklist-label" id="Forum-label" for="Forum"><input class="checklist" 
+        id="Forum" type="checkbox" name="Forum" value="Forum"> Forum</label>
+    <label class="checklist-label" 
+    id="Additional Courses-label" for="Additional Courses"><input class="checklist" id="Additional Courses" type="checkbox" 
+    name="Additional Courses" value="Additional Courses"> Additional Courses</label>
+    <label id="comments-label" for="comments">Any comments or suggestions?
+        <textarea class="NEA" name="comments" 
+        id ="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+    </label>
+    <input type="submit" id="submit" value="Submit" class="submit-button"/>
+</form>
+</fieldset> 
+</div>
+</body>
+</html>
